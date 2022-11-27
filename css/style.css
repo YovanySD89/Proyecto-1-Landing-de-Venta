@@ -13,8 +13,10 @@ body{
 }
 
 .cabezera{
+    overflow: hidden;
+    position: fixed;
     background: #000000;
-    max-width: 100%;
+    width: 100%;
 }
 
 .logo{
@@ -59,6 +61,7 @@ body{
     flex-flow: row wrap;
     font-weight: bold;
     text-align: center;
+    padding: 80px;
 }
 
 .wrapper > *{
@@ -130,7 +133,7 @@ body{
     display: flex;
     background: white;
     justify-content: center;
-    max-width: 100%;
+    padding: 80px;
 }
 
 .container-catalogo li{
@@ -178,6 +181,10 @@ body{
     overflow: hidden;
 }
 
+#section .contacto{
+    padding: 2px;
+}
+
 .form{
     width: 650px;
     height: 440px;
@@ -188,7 +195,7 @@ body{
     padding: 20px 30px;
     box-sizing: border-box;
     font-family: 'IBM Plex Mono', monospace;
-    position: relative;
+    position: static;
 }
 
 .form h2{
@@ -239,7 +246,36 @@ body{
     background: #332a5c;
 }
 
+footer{
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    background: #000000;
+}
 
+#grid{
+    padding: 0 15px 10px;
+    justify-content: space-between;
+}
+
+footer li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-right: 17px;
+    margin-top: 10px;
+}
+
+footer li a{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #332a5c;
+}
+
+footer li img{
+ width: 10%;
+ height: 10%;
+}
 
 @media screen and (min-width: 600px){
     div .container-catalogo{
