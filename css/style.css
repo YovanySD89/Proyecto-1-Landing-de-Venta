@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Inter&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: #1F1C2C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #413772, #bdb6dd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0d0d11, #94929b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cabezera{
+    background: #1F1C2C;
+    max-width: 100%;
+}
+
+.logo{
+    max-width: 100%;
+    position: absolute;
+    padding: 12px;
+}
+
+.logo ul li{
+    display: flex;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 20%;
+    height: 10%;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding: 30px;
+    justify-content: flex-end;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.menu li a{
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 1px 20px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: azure;
+}
+
+/* MAIN*/
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper > *{
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header strong{
+    font-family: 'IBM Plex Mono', monospace;
+    color: antiquewhite;
+    font-size: 23px;
+}
+
+.main-art p, h3{
+    font-family: 'IBM Plex Mono', monospace;
+    color: antiquewhite;
+    font-size: 23px;
+}
+
+.main-art h1{
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgb(218, 186, 144);
+    font-size: 50px; 
+}
+
+
+.aside-1 img{
+    width: 40%;
+    height: 70%;
+    border-radius: 8px;
+}
+
+.aside-2 img{
+    width: 40%;
+    height: 70%;
+    border-radius: 8px;
+   }
+
+.aside-3 label{
+    font-family: 'IBM Plex Mono', monospace;
+    color: antiquewhite;
+    font-size: 23px;
+}
+
+.aside-3 input{
+    width: 100%;
+    padding: 12px 20px;
+    margin:  8px 0;
+    box-sizing: border-box;
+}
+
+.aside-3 button{
+    background-color: #1F1C2C;
+    border: none;
+    color: aliceblue;
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.aside-3 button:hover{
+    background: #332a5c;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.container-catalogo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 25px;
+    padding: 48px;
+}
+
+.container-1 img{
+ width: 30%;
+ height: 40%;
+}
+
+.container-2 img{
+    width: 30%;
+    height: 40%;
+   }
+
+.container-3 img{
+ width: 30%;
+ height: 40%;
+}
+
+.container-4 img{
+    width: 30%;
+    height: 40%;
+   }
+   
+   .container-5 img{
+       width: 30%;
+       height: 40%;
+      }
+   
+   .container-6 img{
+    width: 30%;
+    height: 40%;
+   }
+
+
+@media all and (min-width: 600px){
+    .aside {
+        flex: 1 0 0;
+    }
+}
+
+@media all and (min-width: 1200px){
+    .main { flex: 3 0px; }
+    .aside-1  { order: 2;}
+    .main-art { order: 1;}
+    .aside-2  { order: 4;}
+    .aside-3  { order: 5;}
+}
